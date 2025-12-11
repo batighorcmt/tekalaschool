@@ -93,3 +93,4 @@
 [13-Nov-2025 16:42:21 Europe/Berlin] [2025-11-13 16:42:21] EXCEPTION: Duplicate entry '1-102' for key 'uniq_plan_room' in L:\xampp\htdocs\jsssms\exam\seat_plan_rooms.php:36
 [13-Nov-2025 16:43:10 Europe/Berlin] [2025-11-13 16:43:10] EXCEPTION: Duplicate entry '1-103' for key 'uniq_plan_room' in L:\xampp\htdocs\jsssms\exam\seat_plan_rooms.php:36
 [13-Nov-2025 18:08:02 Europe/Berlin] [2025-11-13 18:08:02] EXCEPTION: Table 'jorepuku_jss.seat_plan_exams' doesn't exist in L:\xampp\htdocs\jsssms\attendance\stats.php:27
+[24-Nov-2025 20:52:20 Europe/Berlin] [2025-11-24 20:52:20] EXCEPTION: Table 'jorepuku_jss.fcm_tokens' doesn't exist in L:\xampp\htdocs\jsssms\settings\fcm_admin.php:99
