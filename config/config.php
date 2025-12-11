@@ -7,8 +7,8 @@
 // Environment-aware mapping so you don't need to edit during deploy
 
 // Provide institute details
-$institute_name='Jorepukuria Secondary School';
-$institute_address='Gangni, Meherpur';
+$institute_name='Tekala Nimnomadhomic Biddaloy';
+$institute_address='Daulatpur, Kushtia';
 $institute_phone='01713913076';
 $institute_logo='/assets/logo.png';
 
@@ -23,12 +23,12 @@ $company_website='https://batighorbd.com';
 if (!defined('BASE_URL')) {
     $host = $_SERVER['HTTP_HOST'] ?? '';
     if ($host) {
-        if (stripos($host, 'jss.batighorbd.com') !== false) {
+        if (stripos($host, 'jsoft.tekalaschool.edu.bd') !== false) {
             // Live
-            define('BASE_URL', 'https://jss.batighorbd.com/');
+            define('BASE_URL', 'https://soft.tekalaschool.edu.bd/');
         } elseif ($host === 'localhost' || $host === '127.0.0.1') {
             // Local
-            define('BASE_URL', 'http://localhost/jsssms/');
+            define('BASE_URL', 'http://localhost/tekalaschool/');
         }
     }
 }
@@ -36,7 +36,7 @@ if (!defined('BASE_URL')) {
 if (!defined('BASE_URL')) {
     // Try to auto-detect base path relative to the web server document root
     $docRoot = isset($_SERVER['DOCUMENT_ROOT']) ? rtrim(str_replace('\\','/', $_SERVER['DOCUMENT_ROOT']), '/') : '';
-    $appRoot = rtrim(str_replace('\\','/', dirname(__DIR__)), '/'); // path to /jsssms
+    $appRoot = rtrim(str_replace('\\','/', dirname(__DIR__)), '/'); // path to /tekalaschool
     $basePath = '/';
     if ($docRoot && strpos($appRoot, $docRoot) === 0) {
         $basePath = substr($appRoot, strlen($docRoot));
