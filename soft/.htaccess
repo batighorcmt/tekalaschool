@@ -1,0 +1,25 @@
+# Disable directory listing
+Options -Indexes
+
+# Ensure mod_rewrite is on
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Allow existing files and directories
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Explicitly block common probe: server.php
+  RewriteRule ^server\.php$ - [R=404,L]
+
+  # Fallback: route everything else to static 404
+  RewriteRule ^.*$ /soft/404.shtml [L]
+</IfModule>
+
+# Security: basic hardening
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "no-referrer"
+</IfModule>
