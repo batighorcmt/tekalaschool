@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "jorepuku_ksms";
 $password = "Halim%%2025_123";
-$dbname = "jorepuku_jss";
+$dbname = "jorepuku_tekalaapp";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
